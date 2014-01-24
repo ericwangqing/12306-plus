@@ -44,3 +44,32 @@ http://localhost:3011  400           164.07 ± 35.02
 http://localhost:3011  500           218.91 ± 56.89               
 http://localhost:3011  600           n/a              
 
+
+
+===================== EXPRESS.JS Multicores ====================
+Benchmarking (hold on)...
+
+Server        Requests/sec  Latency (ms)  
+------------  ------------  --------------
+./m-index.js  100           40.65 ± 9.14  
+./m-index.js  200           77.25 ± 15.66 
+./m-index.js  300           119.92 ± 25.64
+./m-index.js  400           160.98 ± 34.02
+./m-index.js  500           198.97 ± 39.23
+./m-index.js  600           247.25 ± 47.86
+./m-index.js  700           288.74 ± 56.85
+./m-index.js  800           328.36 ± 64.18
+
+========== EXPRESS.JS Multicores with Redis Session store ===========
+Benchmarking (hold on)...
+
+Server        Requests/sec  Latency (ms)   
+------------  ------------  ---------------
+./m-index.js  500           217.58 ± 45.99 
+./m-index.js  600           255.56 ± 55.82 
+./m-index.js  700           322.26 ± 130.72
+./m-index.js  800           352.57 ± 74.35 
+./m-index.js  900           408.91 ± 85.44 
+./m-index.js  1000          481.34 ± 159.15
+
+

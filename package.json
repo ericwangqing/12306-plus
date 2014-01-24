@@ -5,7 +5,9 @@
   "main": "bin/main.js",
   "dependencies": {
     "hapi": "~2.1.1",
-    "express": "~3.4.8"
+    "express": "~3.4.8",
+    "redis": "~0.10.0",
+    "connect-redis": "~1.4.6"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
     "grunt-simple-mocha": "~0.4",
     "grunt-env": "~0.4.0",
     "grunt-docco": "~0.3.0",
-    "nodeload": "~0.4.0"
+    "nodeload": "~0.4.0",
+    "grunt-concurrent": "~0.4.3",
+    "grunt-nodemon": "~0.2.0"
   }
 }
