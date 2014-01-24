@@ -1,0 +1,46 @@
+MacBook Pro
+Processor  2.4 GHz Intel Core i7 (4 cores)
+Memory  8 GB 1600 MHz DDR3
+
+port 3010, 4010 are single core; 3011, 4011 are multicore
+
+flod -t 2000 -c 100..600 -n 10000
+
+=========================== PURE NODE.JS ===========================
+Benchmarking (hold on)...
+
+Server                 Requests/sec  Latency (ms)     Memory  Load
+---------------------  ------------  ---------------  ------  ----
+http://localhost:4010  100           37.57 ± 7.82                 
+http://localhost:4010  200           71.18 ± 13.76                
+http://localhost:4010  300           110.95 ± 25.58               
+http://localhost:4010  400           152.76 ± 36.95               
+http://localhost:4010  500           n/a                
+http://localhost:4010  600           n/a               
+http://localhost:4011  100           39.00 ± 10.35                
+http://localhost:4011  200           75.93 ± 14.86                
+http://localhost:4011  300           113.63 ± 22.40               
+http://localhost:4011  400           157.07 ± 32.43               
+http://localhost:4011  500           204.56 ± 45.26               
+http://localhost:4011  600           n/a              
+
+
+=========================== EXPRESS.JS ===========================
+
+Benchmarking (hold on)...
+
+Server                 Requests/sec  Latency (ms)     Memory  Load
+---------------------  ------------  ---------------  ------  ----
+http://localhost:3010  100           38.74 ± 8.08                 
+http://localhost:3010  200           71.91 ± 14.34                
+http://localhost:3010  300           117.13 ± 28.83               
+http://localhost:3010  400           n/a                
+http://localhost:3010  500           n/a               
+http://localhost:3010  600           n/a                
+http://localhost:3011  100           43.15 ± 10.46                
+http://localhost:3011  200           76.94 ± 14.19                
+http://localhost:3011  300           123.23 ± 24.86               
+http://localhost:3011  400           164.07 ± 35.02               
+http://localhost:3011  500           218.91 ± 56.89               
+http://localhost:3011  600           n/a              
+

@@ -1,0 +1,26 @@
+{
+  "name": "12306-plus",
+  "version": "0.0.1",
+  "description": "an agile solution of 12306",
+  "main": "bin/main.js",
+  "dependencies": {
+    "hapi": "~2.1.1",
+    "express": "~3.4.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericwangqing/12306-plus.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-livescript": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-simple-mocha": "~0.4",
+    "grunt-env": "~0.4.0",
+    "grunt-docco": "~0.3.0",
+    "nodeload": "~0.4.0"
+  }
+}
