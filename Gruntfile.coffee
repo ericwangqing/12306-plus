@@ -9,9 +9,28 @@ module.exports = (grunt)->
       main: 
         files: [
           expand: true
+          flatten: true
           cwd: 'src'
           src: ['**/*.ls']
           dest: 'bin/'
+          ext: '.js'
+        ]
+      test:
+        files: [
+          expand: true # 将来改为在dev下的配置
+          flatten: true
+          cwd: 'test'
+          src: ['**/*.ls', '!load/**/*']
+          dest: 'test-bin/'
+          ext: '.spec.js'
+        ]
+      load:
+        files: [
+          expand: true # 将来改为在dev下的配置
+          flatten: true
+          cwd: 'test/load'
+          src: ['**/*.ls']
+          dest: 'test-bin/load'
           ext: '.js'
         ]
 
@@ -27,13 +46,13 @@ module.exports = (grunt)->
     #       showStack: true
     nodemon:
       app:
-        script: 'bin/index.js'
+        script: 'bin/m-index.js'
         options:
           watch: ['bin']
 
     watch:
       app:
-        files: ["src/**/*.ls"]
+        files: ["src/**/*.ls", 'test/**/*.ls']
         # tasks: ["concat", "livescript",  "copy", "simplemocha"]
         tasks: ["clean", "livescript"]
         options:
