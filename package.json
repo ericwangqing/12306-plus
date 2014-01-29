@@ -7,7 +7,9 @@
     "hapi": "~2.1.1",
     "express": "~3.4.8",
     "redis": "~0.10.0",
-    "connect-redis": "~1.4.6"
+    "connect-redis": "~1.4.6",
+    "underscore": "~1.5.2",
+    "async": "~0.2.10"
   },
   "repository": {
     "type": "git",
@@ -20,11 +22,14 @@
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-concat": "~0.3.0",
-    "grunt-simple-mocha": "~0.4",
+    "grunt-simple-mocha": "~0.4.0",
     "grunt-env": "~0.4.0",
     "grunt-docco": "~0.3.0",
     "nodeload": "~0.4.0",
     "grunt-concurrent": "~0.4.3",
-    "grunt-nodemon": "~0.2.0"
+    "grunt-nodemon": "~0.2.0",
+    "debug": "~0.7.4",
+    "should": "~3.1.2",
+    "supertest": "~0.9.0"
   }
 }

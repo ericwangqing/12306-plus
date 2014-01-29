@@ -1,3 +1,4 @@
+debug = require('debug')('12306')
 ## 12306+ REST Server 12306+ 的动态数据均以Ajax的方式由REST Server提供。
 
 require! ['express', './Database', './Order']

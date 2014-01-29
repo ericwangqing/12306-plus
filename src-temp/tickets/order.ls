@@ -1,3 +1,4 @@
+debug = require('debug')('12306')
 require! ['./Database', './Ticket', './utils']
 _ = require 'underscore'
 db = Database.get!

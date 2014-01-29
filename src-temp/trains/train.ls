@@ -1,3 +1,4 @@
+debug = require('debug')('12306')
 require! ['./Database']
 db = Database.get!
 

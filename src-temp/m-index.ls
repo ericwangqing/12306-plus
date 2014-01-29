@@ -1,3 +1,4 @@
+debug = require('debug')('12306')
 require! ['http', 'cluster', './server']
 num-cpus = require 'os' .cpus!length
 
