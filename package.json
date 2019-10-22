@@ -4,7 +4,7 @@
   "description": "an agile solution of 12306",
   "main": "bin/main.js",
   "dependencies": {
-    "hapi": "~2.1.1",
+    "hapi": "~18.1.0",
     "express": "~3.4.8",
     "redis": "~0.10.0",
     "connect-redis": "~1.4.6",
